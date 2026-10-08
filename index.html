@@ -18,8 +18,154 @@
         <li>git switch branch : muda de branch</li>
         <li>git switch -c cria-nova-branch : muda de branch</li>
         <li>git diff : exibe a diferença do commit apontado por HEAD e worktree</li>
+        <br>
+        <li>simpsons: o retorno</li>
+        <li>Melhor filme de todos :D</li>
+        <nav>
+            <a href="https://google.com" target="_blank">link</a>
+        </nav>
+       
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quam id iusto provident quidem delectus modi, maxime libero,
+                sequi veritatis cupiditate facere debitis soluta voluptatem laborum vel excepturi dicta hic.
+            </p>
+            <p>
+                <mark>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem aspernatur ullam, odio, delectus nostrum incidunt saepe minus velit
+                tenetur totam eligendi. Adipisci maxime fugiat hic voluptate! Possimus dignissimos illo laudantium?</mark> - aqui foi usado o atributo mark
+            </p>
+            <p>
+                2<sub>2</sub> <br>
+                6.23x10 <sub>23</sub>
+            </p>
+            <span>churrasco </span>
+            <span>churrasco </span>
+            <input type="churrasco">
+            <p>churrasco </p>
+            <p>churrasco </p>
+           
+            <ul>
+                <li>carne</li>
+                <li>batata</li>
+                <li>pão de alho</li>
+            </ul>
+            <br>
+            <ol>
+                <li>carne</li>
+                <li>batata</li>
+                <li>pão de alho</li>
+            </ol>
+            <br>
+            <ol type="A">
+                <li>carne</li>
+                <li>batata</li>
+                <li>pão de alho</li>
+            </ol>
+            <br>
+            <dl>
+                <li>carne</li>
+                <li>batata</li>
+                <li>pão de alho</li>
+               
+            </dl>
+            <br>
+            <dl>
+                <dt>café</dt>
+                <dd>vida</dd>
+            </dl>
+            <hr></hr>
+            <table>
+                <caption>Churras</caption>
+                <thead>
+                <tr></tr>
+                <tr>
+                    <th>indice</th>
+                    <th>nome</th>
+                    <th>quantidade</th>
+                    <th>valor item</th>
+                    <th>valor</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>item 1</td>
+                    <td>carne</td>
+                    <td>4</td>
+                    <td>40,00</td>
+                    <td>100,00</td>
+                </tr>
+                <tr>
+                    <td>item 2</td>
+                    <td>batata</td>
+                    <td>5</td>
+                    <td>2,00</td>
+                    <td>10,00</td>
+                </tr>
+                <tr>
+                    <td>item 3</td>
+                    <td>pão de alho</td>
+                    <td>3</td>
+                    <td>15,00</td>
+                    <td>45,00</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="4">total</td>
+                    <td>155,00</td>
+                </tr>
+                </tfoot>
 
-        
+
+            </table>
+        </div>
+        <form action="https://google.com/search">
+
+
+            <label for="busca">termos de busca</label>
+            <input id="busca" name ="q" type="text" placeholder="pesquisa pato">
+
+
+            <input type="color">
+           
+            <input type="submit" value="pesquisar">
+           
+        </form>
+
+
+        <canvas id="canvas" height="1000px" width="600px"></canvas>
+
+
+        <script>
+            //declarar variavel em js
+            const canvas = document.getElementById("canvas");
+            const ctx= canvas.getContext("2d");
+            ctx.beginPath();
+            ctx.moveTo(40,30 );
+            ctx.lineTo(1000,1000);
+            ctx.closePath();
+            ctx.stroke();
+
+
+            canvas.addEventListener("mousedown", (e)=>(
+                desenhando=true;
+                ctx.moveTo(e.offsetX, e.offsetY);
+            )  )
+            canvas.addEventListener("mouseup", (e)=>(
+                desenhando=false;
+            )  )
+
+
+            canvas.addEventListener("mousemove"),(e)=>(
+                if ( desenhando){
+                ctx.lineTo(e.offsetX+10, e.offsetY+10);
+                ctx.stroke();
+                }
+       
+            )  
+        </script>
     </ul>
+
+
 </body>
 </html>
+
