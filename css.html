@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de CSS</title>
+    <link rel="stylesheet" href="style">
+    <style>
+        /* Regra CSS*/
+        *{
+            border: 1px solid rgb(31, 54, 34);
+        }
+        p{
+            border: 3px solid blue;
+        }
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20pt;
+            color: rgb(0, 80, 80);
+            background-color: rgb(127, 255, 212, 0.75);
+        }
+        h1{
+            font-family: fantasy;
+            font-size: 35pt;
+            color: rgb(255, 0, 221);
+        }
+        #itemID{font-family: Verdana, Geneva, Tahoma, sans-serif}
+        .item{
+            background-color: rgb(138, 43, 226, 0.4);
+        }
+        div span{
+            font-style: oblique;
+            color: rgb(189, 0, 0);
+            border: none;
+        }
+        div>mark{
+            background-color: rgb(210, 105, 30, 0.6);
+            border: none;
+        }
+        li:hover{ color: crimson;}
+        li:first-child{
+            font-size: 17pt;
+        }
+        li:last-child{
+            font-size: 17pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aula de CSS</h1>
+    <p> Css é uma linguagem declarativa auxiliar documentos html para estilização de 
+        definição de comportamento. O css pode ser declarado de três formas distintas.</p>
+
+    <ol style="color: brown;">
+        <li class="item">Na tag style, definida no cabeçario do HTML;</li>
+        <li class="item">Em um documento externo por meioda tag link;</li>
+        <li class="item">Inline no proprio elemento HTML.</li>
+    </ol>
+
+    <div>
+        <p style="background-color: white;">CSS possui diversas formas de selecionar em quais elementos html uma regra 
+        sera aplicada</p>
+        <span style="font-size: 20pt;">Seletores:</span>
+        <ul>
+            <li>seletores por elemento</li>
+            <li>Seletor universal <span>" * " </span>;</li>
+            <li>id identificador unico <span>" # " </span>.</li>
+            <li>classe ou categoria <span>" . " </span>.</li>
+            <li>seletor por descente " " .<span>  A  </span><mark style="border: none;">B</mark></li>
+        </ul>
+        <mark>B</mark>
+    </div>
+</body>
+</html>
